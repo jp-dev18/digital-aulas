@@ -86,3 +86,21 @@ body {
     padding: 15px 40px;
     border-radius: 25px;
 }
+
+.container .direita .formulario .topo .redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .direita .formulario .topo .redes-sociais .icone {
+    border: 1px solid #cecece;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:  50%;
+}

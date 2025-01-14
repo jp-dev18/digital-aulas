@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.container .esquerda {
+    width: 50%;
+    height: 100%;
+    background-color: #BA68C8;
+}
+
+.container .direita {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .direita .topo h1 {
+    font-size: 45px;
+    color: #BA68C8;
+    text-transform: uppercase;
+}
+
+.container .direita .meio {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+}
+
+.container .direita .meio .campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .direita .meio .campo label {
+    font-weight: bold;
+}
+
+.container .direita .meio .campo input {
+    border: none;
+    background-color: #E3E3E3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container .direita .meio .esqueci-senha {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .direita .meio .esqueci-senha .esquerda {
+    background-color: white;
+    width: auto;
+}
+
+.container .direita .meio .esqueci-senha .direita {
+    width: auto;
+}
+
+.container .direita .fim {
+    width: 400px;
+}
+
+.container .direita .fim button {
+    width: 100%;
+    background-color: #BA68C8;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container .direita .fim .novo-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

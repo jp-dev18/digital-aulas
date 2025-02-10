@@ -13,7 +13,7 @@ body {
 .container .esquerda {
     width: 40%;
     height: 100%;
-    background-color: #59af9c;
+    background-color: #BA68C8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +44,7 @@ body {
 }
 
 .container .direita .formulario .topo h1 {
-    color: #59af9c;
+    color: #BA68C8;
     font-size: 40px;
 }
 
@@ -80,7 +80,7 @@ body {
 }
 
 .container .direita .formulario .fim button {
-    background-color: #59af9c;
+    background-color: #BA68C8;
     border: 1px solid transparent;
     color: white;
     padding: 15px 40px;

@@ -7,19 +7,80 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
-    <section>
+    <section class="h-screen">
         <header class="flex justify-between items-center p-[20px]">
             <img src="https://images.vexels.com/media/users/3/137724/isolated/preview/c30bc541ea2fe03747c7f569bee90089-minimalismo-infinity-logo-infinite.png" alt="Logo"class="w-[40px]">
-            <div class="border rounded-xs border-gray-200">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input class="outline-0"type="text">
+            <div class="border rounded-xs border-gray-400 w-[400px] px-[10px] py-[05px] flex items-center gap-4">
+                <i class="fa-solid fa-magnifying-glass text-[#BA68C8] text-xs"></i>
+                <input class="outline-0 w-full text-xs" placeholder="Search for projects">
             </div>
-            <div class="flex items-center gap-4">
-                <i class="fa-solid fa-moon"></i>
-                <i class="fa-solid fa-bell"></i>
+            <div class="flex items-center gap-4 text-[#BA68C8] text-xl cursor-pointer rounded-full">
+                <i class="fa-solid fa-moon cursor-pointer"></i>
+                <i class="fa-solid fa-bell cursor-pointer"></i>
                 <img class="w-[30px] rounded-full" src="https://avatars.githubusercontent.com/u/190427610?v=4.png" alt="Foto de usuario">
             </div>
         </header>
+
+        <section class="flex h-full w-full">
+            <aside class="w-[20%]">
+                <nav>
+                    <ul>
+                        <li class="hover:bg-gray-100 trasition-all duration-500 border-l-5 border-[#BA68C8]" id="selecionado">
+                            <a href=""class="flex items-center gap-4 px-[25px] py-[15px] text-black">
+                                <i class="fa-solid fa-house"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="hover:bg-gray-100 trasition-all duration-500">
+                            <a href=""class="flex items-center gap-4 px-[15px] py-[15px] text-gray-500">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <p>Forms</p>
+                            </a>
+                        </li>
+                        <li class="hover:bg-gray-100 trasition-all duration-500">
+                            <a href=""class="flex items-center gap-4 px-[15px] py-[15px] text-gray-500">
+                                <i class="fa-regular fa-folder"></i>
+                                <p>Cards</p>
+                            </a>
+                        </li>
+                        <li class="hover:bg-gray-100 trasition-all duration-500">
+                            <a href=""class="flex items-center gap-4 px-[15px] py-[15px] text-gray-500">
+                                <i class="fa-solid fa-arrow-pointer"></i>
+                                <p>Buttons</p>
+                            </a>
+                        </li>
+                        <li class="hover:bg-gray-100 trasition-all duration-500">
+                            <a href=""class="flex items-center gap-4 px-[15px] py-[15px] text-gray-500">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Modals</p>
+                            </a>
+                        </li>
+                        <li class="hover:bg-gray-100 trasition-all duration-500">
+                            <a href=""class="flex items-center gap-4 px-[15px] py-[15px] text-gray-500">
+                                <i class="fa-solid fa-bars"></i>
+                                <p>Tables</p>
+                            </a>
+                        </li>
+                        <li class="hover:bg-gray-100 trasition-all duration-500">
+                            <a href=""class="flex items-center gap-4 px-[15px] py-[15px] text-gray-500 justify-between">
+                                <div class="flex gap-4 items-center">
+                                    <i class="fa-solid fa-table-cells-large"></i>
+                                    <p>Pages</p>
+                                </div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex justify-center items-center mt-4">
+                    <button class="bg-[#BA68C8] px-[30px] py-[8px] text-white rounded cursor-pointer">Create account +</button>
+                </div>
+            </aside>
+            <main class="bg-[#F9FAFB] w-[80%] h-auto p-6">
+                <h1 class="text-[24px] font-bold">Dashboard</h1>
+            </main>
+        </section>
+
     </section>
 </body>
 </html>

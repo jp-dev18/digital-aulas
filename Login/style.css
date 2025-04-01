@@ -19,7 +19,7 @@ body {
 .container .direita {
     width: 50%;
     height: 100%;
-
+    border-radius: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,4 +89,25 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+/* media query */
+
+@media (max-width: 758px) {
+    .container .esquerda {
+        display: none;
+    }
+
+    .container .direita {
+        width: 100%;
+    }
+}
+
+@media (max-width: 417px) {
+    .container .direita .meio {
+        width: 90%;
+    }
+    .container .direita .fim {
+        width: 90%;
+    }
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
     <section class="h-screen">
-        <header class="flex justify-between items-center p-[20px]">
+        <header class=" hidden md:flex justify-between items-center p-[20px]">
             <img src="https://images.vexels.com/media/users/3/137724/isolated/preview/c30bc541ea2fe03747c7f569bee90089-minimalismo-infinity-logo-infinite.png" alt="Logo"class="w-[40px]">
             <div class="border rounded-xs border-gray-400 w-[400px] px-[10px] py-[05px] flex items-center gap-4">
                 <i class="fa-solid fa-magnifying-glass text-[#BA68C8] text-xs"></i>
@@ -22,7 +22,7 @@
         </header>
 
         <section class="flex h-full w-full">
-            <aside class="w-[20%]">
+            <aside class="w-[20%] hidden md:flex md:flex-col">
                 <nav>
                     <ul>
                         <li class="hover:bg-gray-100 trasition-all duration-500 border-l-5 border-[#BA68C8]" id="selecionado">
@@ -76,7 +76,7 @@
                     <button class="bg-[#BA68C8] px-[30px] py-[8px] text-white rounded cursor-pointer">Create account +</button>
                 </div>
             </aside>
-            <main class="bg-[#F9FAFB] w-[80%] h-auto p-6 space-y-6">
+            <main class="bg-[#F9FAFB] w-full md:w-4/5 h-auto p-6 space-y-6">
                 <h1 class="text-[24px] font-bold">Dashboard</h1>
                 <div class="flex bg-[#BA68C8] p-4 text-white px-[15px] py-[15px] place-content-between rounded-lg">
                     <div class="flex items-center gap-2">

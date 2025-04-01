@@ -156,3 +156,22 @@ a {
 .conteiner footer .direita i:hover {
     color: #BA68C8;
 }
+
+/* media query */
+
+@media (max-width: 758px) {
+    .conteiner {
+        & header {
+            display: none;
+        }
+        & main {
+            & .esquerda {
+                display: none;
+            }
+            & .direita {
+                width: 100%;
+                padding: 40px;
+            }
+        }
+    }
+}

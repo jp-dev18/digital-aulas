@@ -104,3 +104,24 @@ body {
     align-items: center;
     border-radius:  50%;
 }
+
+/* media query */
+
+@media (max-width: 592px) {
+    .container .esquerda {
+        display: none;
+    }
+
+    .container .direita {
+        width: 100%;
+    }
+}
+
+@media (max-width: 217px) {
+    .container .direita .meio {
+        width: 50%;
+    }
+    .container .direita .fim {
+        width: 50%;
+    }
+}

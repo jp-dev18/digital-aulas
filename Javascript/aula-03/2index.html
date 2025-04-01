@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Container -->
+    <main class="bg-gray-900 w-full h-screen flex">
+        <!-- Esquerda -->
+      <div class="w-1/2 h-full flex justify-center items-center">
+        <img
+          src="imgStorySet/fitness-tracker-animate (1).svg"
+          alt="gym run"
+          class="w-[600px]"
+        />
+      </div>
+      <!-- Direita -->
+      <div class="w-1/2 h-full flex justify-center items-center">
+        <!-- Card -->
+        <form class="bg-gray-700 w-3/4 rounded-md text-white p-4 flex flex-col" onsubmit="calcularIMC(event)">
+            <!-- Topo -->
+            <div>
+                <h1 class="text-3xl">Calculadora - IMC</h1>
+                <span class="border-b-2 flex border-red-950 w-[150px] h-4"></span>
+            </div>
+            <!-- Meio -->
+            <div class="space-y-4">
+                <!-- Campo -->
+                <div class="flex flex-col">
+                    <label for="peso">Peso</label>
+                    <input type="number" name="" id="peso" class="bg-gray-600 rounded-md p-2">
+                    <p id="error-peso" class="text-red-500 hidden">Preencha o campo peso.</p>
+                </div>
+                <!-- Campo -->
+                <div class="flex flex-col">
+                    <label for="altura">Altura</label>
+                    <input type="text" name="" id="altura" class="bg-gray-600 rounded-md p-2">
+                    <p id="error-altura" class="text-red-500 hidden">Preencha o campo altura.</p>
+                </div>
+                <button class="bg-red-950 w-full py-2 rounded-md">Calcular</button>
+                <span class="w-full border-b-2 border-gray-500 h-2 flex"></span>
+            </div>
+            <!-- Fim -->
+            <div class="flex items-center space-x-6">
+                <!-- Esquerda -->
+                <div class="text-center">
+                    <h1 class="text-red-950 text-3xl" id="total-imc">00.00</h1>
+                    <p class="text-sm">Seu IMC</p>
+                </div>
+                <!-- Direita -->
+                <div>
+                    <p id="grau"></p>
+                </div>
+            </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="2script.js"></script>
+  </body>
+</html>

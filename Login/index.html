@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <div class="container">
@@ -19,10 +20,12 @@
                 <div class="campo">
                     <label for="email">E-mail</label>
                     <input type="email" name="" id="email">
+                    <p id="error-email" class="text-red-500 hidden">Digite seu e-mail!</p>
                 </div>
                 <div class="campo">
                     <label for="senha">Senha</label>
                     <input type="password" name="" id="senha">
+                    <p id="error-senha" class="text-red-500 hidden">Digite sua senha!</p>
                 </div>
                 <div class="esqueci-senha">
                     <div class="esquerda">
@@ -35,7 +38,7 @@
                 </div>
             </div>
             <div class="fim">
-                <button>ENTRAR</button>
+                <button onclick="login(event)">ENTRAR</button>
                 <div class="novo-usuario">
                     <p>Não tem uma conta?</p>
                     <a href="">Cadastre-se</a>
@@ -43,5 +46,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

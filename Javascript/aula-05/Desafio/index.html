@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Array Simples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-4">
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow p-6">
+        <h1 class="text-2xl font-bold text-center mb-6">Métodos de Array</h1>
+        
+        <!-- Array atual -->
+        <div class="mb-6 p-4 bg-blue-50 rounded">
+            <h2 class="font-semibold mb-2">Array atual:</h2>
+            <div id="array" class="font-mono"></div>
+        </div>
+        
+        <!-- Controles básicos -->
+        <div class="mb-6 grid grid-cols-2 gap-2">
+            <input type="text" id="item" placeholder="Novo item" class="p-2 border rounded col-span-2">
+            <button onclick="addItem()" class="bg-green-500 text-white p-2 rounded">Adicionar</button>
+            <button onclick="removeItem()" class="bg-red-500 text-white p-2 rounded">Remover último</button>
+        </div>
+        
+        <!-- Métodos principais -->
+        <div class="grid grid-cols-2 gap-2 mb-6">
+            <button onclick="useMethod('pop')" class="bg-blue-500 text-white p-2 rounded">pop()</button>
+            <button onclick="useMethod('push')" class="bg-blue-500 text-white p-2 rounded">push()</button>
+            <button onclick="useMethod('shift')" class="bg-blue-500 text-white p-2 rounded">shift()</button>
+            <button onclick="useMethod('unshift')" class="bg-blue-500 text-white p-2 rounded">unshift()</button>
+            <button onclick="useMethod('slice')" class="bg-blue-500 text-white p-2 rounded">slice()</button>
+            <button disabled onclick="useMethod('splice')" class="bg-blue-500 text-white p-2 rounded">splice()</button>
+        </div>
+        
+        <!-- Resultado -->
+        <div class="p-4 bg-yellow-50 rounded">
+            <h2 class="font-semibold mb-2">Resultado:</h2>
+            <div id="result" class="font-mono">Clique em um método</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
